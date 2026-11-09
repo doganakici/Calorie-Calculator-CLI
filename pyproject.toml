@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calorie-calc"
+version = "1.0.0"
+description = "Calorie Calculator & Nutrition Tracker CLI App"
+readme = "README.md"
+authors = [{ name = "Dogan Akici" }]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+calorie = "calorie_calc:main"
+calorie-calc = "calorie_calc:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["calc_core*", "calc_core"]
